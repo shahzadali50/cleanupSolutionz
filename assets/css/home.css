@@ -1,0 +1,286 @@
+/* banner-slider */
+.banner-slider .content-slider {
+  position: absolute;
+  top: 5%;
+}
+
+.content-slider ul {
+  list-style: circle;
+}
+.content-slider h4.banner-h {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.content-slider p.price {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.content-slider h5.percent {
+  font-size: 18px;
+  padding: 15px 0px;
+}
+
+.content-slider ul li {
+  font-weight: 600;
+}
+
+.content-slider a.btn {
+  border-radius: 0px;
+  border: 1px solid black;
+  background-color: #fac517;
+  color: black;
+  font-size: 12px;
+  padding: 8px 0px;
+  margin-top: 8px;
+}
+.content-slider a.banner-btn:hover {
+  background-color: #f1f0ee;
+  border: 1px solid orange;
+  color: orange;
+}
+
+/* home-services*/
+.home-services {
+  padding: 30px 0px;
+}
+
+.home-services p {
+  margin-bottom: 30px;
+}
+
+.home-services .card {
+  border: none;
+  border-radius: 0px;
+}
+
+.home-services h5,
+.all-services h5 {
+  margin-top: -13px;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+}
+
+.home-services h5:hover,
+.all-services h5:hover {
+  color: orange;
+}
+
+/* Domestic-Cleaning */
+.domestic-cleaning {
+  border-top: 1px solid rgba(62, 62, 62, 0.766);
+  padding: 40px 0px;
+}
+
+.domestic-cleaning .owl-carousel .owl-nav button.owl-prev,
+.domestic-cleaning .owl-carousel .owl-nav button.owl-next,
+.home-rating .owl-carousel .owl-nav button.owl-prev,
+.home-rating .owl-carousel .owl-nav button.owl-next {
+  background-color: rgba(59, 57, 57, 0.42);
+  color: white;
+  height: 40px;
+  width: 40px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute;
+  top: 45%;
+}
+
+.domestic-cleaning .owl-carousel .owl-nav button.owl-prev:hover,
+.domestic-cleaning .owl-carousel .owl-nav button.owl-next:hover,
+.home-rating .owl-carousel .owl-nav button.owl-prev:hover,
+.home-rating .owl-carousel .owl-nav button.owl-next:hover {
+  background-color: rgba(51, 49, 49, 0.678);
+}
+
+.domestic-cleaning .owl-carousel .owl-nav button.owl-prev span,
+.domestic-cleaning .owl-carousel .owl-nav button.owl-next span,
+.home-rating .owl-carousel .owl-nav button.owl-prev span,
+.home-rating .owl-carousel .owl-nav button.owl-next span {
+  font-size: 30px;
+  margin-top: -4px;
+}
+
+.domestic-cleaning .owl-carousel .owl-nav button.owl-prev {
+  left: -5px;
+}
+
+.domestic-cleaning .owl-carousel .owl-nav button.owl-next {
+  right: -5px;
+}
+
+.domestic-cleaning h2,
+.after-before h2 {
+  font-size: 26px;
+}
+
+.home-services p,
+.domestic-cleaning p,
+.after-before p,
+.home-touch p,
+.all-services p,
+.all-services p {
+  font-size: 17px;
+}
+
+/* after-before */
+.after-before {
+  padding: 40px 0px;
+  border-top: 1px solid rgba(62, 62, 62, 0.766);
+}
+
+.after-before p {
+  color: black;
+}
+
+.after-before div.icon {
+  background-color: rgba(50, 196, 50, 0.677);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: rgb(253, 253, 253);
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+.after-before ul li {
+  color: black;
+  margin-bottom: 12px;
+}
+.after-before .twentytwenty-overlay {
+  background-color: none;
+  z-index: 0;
+}
+
+/* home-rating */
+.home-rating {
+  padding: 30px 0px;
+}
+
+.home-rating .card,
+.all-services .card {
+  border: none;
+}
+
+.home-rating .card h6 {
+  font-weight: 700;
+}
+
+.home-rating span.rating-icon {
+  padding-left: 14px;
+  margin-top: 20px;
+}
+
+.home-rating .card i {
+  font-size: 20px;
+  color: orange;
+}
+
+.home-rating .owl-carousel .owl-nav button.owl-prev {
+  left: 8px;
+}
+
+.home-rating .owl-carousel .owl-nav button.owl-next {
+  right: 8px;
+}
+
+/* home-blog */
+
+.home-blog h2.main-heading {
+  background-color: rgb(242, 242, 242);
+}
+
+.home-blog .card {
+  border: none;
+}
+
+.home-blog {
+  padding: 50px 0px;
+}
+
+/* home-touch */
+.home-touch {
+  padding: 40px 0px;
+  border-bottom: 1px solid orange;
+}
+.home-touch a.book,
+.services-contact a {
+  background-color: #fac517;
+}
+
+.home-touch a.book:hover,
+.services-contact a:hover {
+  background-color: #f1f0ee;
+}
+
+.home-touch a.quote:hover {
+  background-color: #fac517;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* banner-slider */
+
+  .content-slider ul li {
+    font-size: 13px;
+  }
+  .content-slider p.price {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* banner-slider */
+  .banner-slider .content-slider {
+    top: -1%;
+  }
+  .content-slider ul li {
+    font-size: 13px;
+  }
+
+  .content-slider p.price {
+    margin-bottom: 0px;
+  }
+
+  .content-slider ul.margin-t {
+    margin-top: -8px;
+  }
+
+  .content-slider a.margin-t {
+    margin-top: 8px;
+  }
+  .content-slider a.btn {
+    margin-top: 1px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* banner-slider */
+  .banner-slider .content-slider {
+    position: relative;
+  }
+  .content-slider a.margin-t {
+    margin-top: 10px;
+  }
+  .content-slider ul li {
+    font-size: 12px;
+  }
+
+  .home-rating,
+  .after-before,
+  .home-touch,
+  .home-blog {
+    padding: 20px 0px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* home-services */
+  .home-services h1.main-heading {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}

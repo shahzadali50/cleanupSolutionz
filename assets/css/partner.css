@@ -1,0 +1,359 @@
+
+.partner.navbar {
+  padding: 5px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+header .dropdown-toggle::after {
+  display: none;
+}
+
+.partner .navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+/* side-bar */
+.partner .sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100vh;
+  z-index: 1032;
+  background: #7386d5;
+  color: #fff;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.partner .sidebar.active {
+  left: 0;
+}
+.partner h3.sidebar-h {
+  color: #fff !important;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #7386d5;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+#dismiss:hover {
+  background-color: #ffffffd3;
+  color: #6d7fcc;
+}
+
+.partner .overlay {
+  display: none;
+  /* position: fixed; */
+  width: 100vw;
+  height: 100vh;
+  /* background: rgba(0, 0, 0, 0.7); */
+  z-index: 998;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.partner .overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+.partner .sidebar .sidebar-header {
+  padding: 20px;
+  background: #6d7fcc;
+}
+
+.partner .sidebar ul {
+  border-bottom: 1px solid #b0b7ba;
+  list-style: none;
+}
+
+.partner .sidebar ul li a {
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+}
+.partner .sidebar ul li a:hover {
+  color: #8096ef;
+  background: #ffffff;
+  font-size: 21px;
+}
+.partner a.logout {
+  background-color: rgb(216, 189, 16);
+  color: rgb(0, 0, 0);
+  padding: 15px 25px;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.partner a.logout:hover {
+  background-color: white;
+  color: rgb(216, 189, 16);
+  border: 3px solid rgb(216, 189, 16);
+}
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.partner img.cleanup-img {
+  width: 150px;
+  height: 70px;
+}
+.partner button.sidebar-btn{
+  background-color: #fac517;
+  border: none;
+}
+.content {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+.progressBar p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.progressBar h4.description-h {
+  font-size: 30px;
+
+}
+.progressBar p.description {
+ font-size: 15px;
+
+}
+.progressBar a.withdraw {
+  background-color: orange;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 3px 26px;
+  border: 1px solid orange;
+}
+.progressBar a.withdraw:hover {
+ background-color: white;
+ border: 1px solid orange ;
+ color: orange;
+}
+.progressBar a.withdraw {
+  padding: 15px 25px;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  color: #fac517;
+  background-color: #3d3d3d;
+  transition: all .2s;
+  border: 1px solid #033d24;
+}
+.progressBar a.withdraw:hover {
+  background-color: white;
+    color: #fac517;
+    transition: all .2s;
+    border: 1px solid #fac517;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.partner div.order {
+  border: none;
+  padding: 35px 0px;
+}
+.partner div.order a img.order-img {
+  -webkit-mask-image: linear-gradient(
+    45deg,
+    #000 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    #000 75%
+  );
+  mask-image: linear-gradient(
+    45deg,
+    #000 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    #000 75%
+  );
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 0;
+  mask-position: 0;
+}
+
+.partner div.order a img.order-img:hover {
+  transition: mask-position 2s ease, -webkit-mask-position 2s ease;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 1;
+}
+.partner div.order a img.order-img {
+  animation: mask-animation 4s;
+  -webkit-animation: mask-animation 4s; /* Safari and Chrome */
+  -moz-animation: mask-animation 4s; /* Firefox */
+  -o-animation: mask-animation 4s; /* Opera */
+}
+
+@keyframes mask-animation {
+  0% {
+    -webkit-mask-position: 120%;
+    mask-position: 120%;
+  }
+  50% {
+    -webkit-mask-position: 0%;
+    mask-position: 0%;
+  }
+  100% {
+    -webkit-mask-position: 120%;
+    mask-position: 120%;
+  }
+}
+/* Quote-section */
+.partner h3.form-h {
+  font-size: 40px;
+  font-weight: 700;
+}
+.partner input.form-control {
+  padding: 24px 10px;
+  font-size: 25px;
+  box-shadow: none;
+}
+.partner label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.partner label span {
+  font-weight: 700;
+}
+.partner hr {
+  margin-top: 65px;
+}
+
+.partner button.continue {
+  padding: 16px 0px;
+  margin-top: 40px;
+  font-size: 22px;
+  background-color: orange;
+  border: 2px solid orange;
+  font-weight: 500;
+  width: 100%;
+}
+.partner button.continue:hover {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+}
+.Quote .extra-tasks label{
+  background: #f8fbfe;
+  border: 1px solid #eaecf8;
+  padding: 15px 15px;
+  border-radius: 5px;
+}
+.Quote .extra-tasks label:hover{
+  background: #63768a1d;
+ 
+  
+}
+.Quote .extra-tasks span{
+  font-size: 15px;
+ 
+  
+}
+.Quote .extra-tasks label i{
+font-size: 25px;
+ 
+  
+}
+.Quote input[type=checkbox]:checked+.icon-box {
+ background-color: white;
+ border: 1px solid rgb(0, 136, 255)
+
+}
+
+/* WithDraw-section */
+.partner button.submit {
+  padding: 10px 120px;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: orange;
+  border: 2px solid orange;
+}
+.partner button.submit:hover {
+ background-color: white;
+ color: orange;
+ border: 2px solid orange;
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+  /* quote-section */
+  .partner h3.form-h {
+    font-size: 34px;
+  }
+  .partner input.form-control {
+    font-size: 15px;
+  }
+  .partner label {
+    margin-top: 6px;
+  }
+  .partner hr {
+    margin-top: 47px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .partner img.cleanup-img {
+    width: 90px;
+    height: 50px;
+  }
+  .progressBar p {
+    font-size: 16px;
+  }
+  /* quote-section */
+  .partner h3.form-h {
+    font-size: 28px;
+  }
+  .partner input.form-control {
+    padding: 22px 10px;
+}
+
+  .partner label {
+    font-size: 15px;
+  }
+  .partner hr {
+    margin-top: 35px;
+  }
+  .partner button.continue {
+    padding: 10px 0px;
+    font-size: 17px;
+  }
+  /* WithDraw-section */
+  .partner button.submit {
+    padding: 10px 0px;
+    font-size: 17px;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .progressBar p {
+    font-size: 14px;
+  }
+  /* quote-section */
+  .partner h3.form-h {
+    font-size: 25px;
+  }
+}

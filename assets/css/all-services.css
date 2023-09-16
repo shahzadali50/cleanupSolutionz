@@ -1,0 +1,18 @@
+.all-services{
+    padding: 30px 0px;
+}
+.all-services h1 {
+    font-size: 30px;
+}
+
+.services-contact h2.main-heading {
+    background: #f2f2f2;
+}
+
+.all-services .card {
+    margin-bottom: 20px;
+}
+
+.services-contact {
+    padding: 30px 0px;
+}
